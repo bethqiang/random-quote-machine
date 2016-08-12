@@ -1,0 +1,93 @@
+/*overall formatting*/
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 10rem;
+  min-height: 100%;
+  font-family: Handlee;
+  color: #2f4f4f;
+}
+
+
+/*media queries for sort-of-responsive styling*/
+
+#title{font-size: 266%}
+#default-quote{font-size: 120%}
+#default-author{font-size: 96%}
+#quote{font-size: 120%}
+#author{font-size: 96%}
+footer{font-size: 80%}
+@media(min-width:480px){
+  #title{font-size: 333%}
+  #default-quote{font-size: 150%}
+  #default-author{font-size: 124%}
+  #quote{font-size: 150%}
+  #author{font-size: 124%}
+  footer{font-size: 100%}
+}
+@media(min-width:768px){
+  #title{font-size: 400%}
+  #default-quote{font-size: 180%}
+  #default-author{font-size: 144%}
+  #quote{font-size: 180%}
+  #author{font-size: 144%}
+  footer{font-size: 100%}
+}
+
+
+/*the main part of it*/
+
+.container-style-title {
+  margin: 30px auto 0px auto;
+}
+.container-style1 {
+  background: rgba(190, 190, 190, 0.4);
+  width: 80%;
+  max-width: 500px;
+  margin: 25px auto 20px auto;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+#quote-box {
+  padding: 20px 0px;
+}
+#button-box {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.button {
+  background: rgba(190, 190, 190, 0.4);
+  font-size: 16px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 2px solid white;
+  color: #2f4f4f;
+}
+.button:hover {
+    cursor: pointer;
+    background: #2f4f4f;
+    color: white;
+    opacity: 0.8;
+}
+
+
+/*"natural" footer - stays at the bottom of the page but if page is longer than viewport, will need to scroll*/
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
